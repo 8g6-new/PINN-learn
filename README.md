@@ -16,10 +16,6 @@ Input Spectrogram (128×60)
 Initial Condition u₀ (batch×freq×time)
 ↓
 Heat ODE Solver (Neural ODE + PDE constraint)
-↓
-Learnable Linear Projection (weight matrix)
-↓
-Classification Output (15 classes)
 ```
 
 ## Core Components
@@ -183,11 +179,6 @@ pip install torchdiffeq torchsummary pytorch-lightning
 
 ---
 
-## Applications
 
-* Audio Classification
-* Physics-Constrained ML
-* Scientific ML
 
----
 
