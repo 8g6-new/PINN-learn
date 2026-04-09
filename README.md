@@ -57,15 +57,12 @@ class EasyLoder(Dataset):
 
 The heat equation with a learnable source term:
 
-[
-\frac{\partial u}{\partial t} = \alpha \nabla^2 u + Q(t)
-]
+$$\frac{\partial u}{\partial t} = \alpha \nabla^2 u + Q(t)$$
 
 Where:
-
-* ( \alpha ): learnable thermal diffusivity (per frequency band)
-* ( Q(t) = Q_0 e^{-\lambda t} ): time-decaying heat source
-* ( \nabla^2 u ): Laplacian computed via Finite Difference Method
+* $\alpha$: learnable thermal diffusivity (per frequency band)  
+* $Q(t) = Q_0 e^{-\lambda t}$: time-decaying heat source
+* $\nabla^2 u$: Laplacian computed via Finite Difference Method
 
 ```python
 class Heat_Eq_PDE(torch.nn.Module):
@@ -194,7 +191,3 @@ pip install torchdiffeq torchsummary pytorch-lightning
 
 ---
 
-## Citation
-
-* Neural ODEs (NeurIPS 2018)
-* Physics-Informed Learning (2017)
